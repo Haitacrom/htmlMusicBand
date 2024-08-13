@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+}
+
+.header__item {
+  display: flex;
+  list-style-type: none;
+  padding: 0; /* Optional: Removes default padding */
+  margin: 0; /* Optional: Removes default margin */
+  text-align: center;
+}
+
+.header__item a {
+  text-decoration: none;
+}
+.color-white {
+  color: white;
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+}
+.background-color-white:hover {
+  background-color: rgb(161, 158, 158);
+}
+.header__item-select ul {
+  list-style-type: none;
+  padding: 0; /* Optional: Removes default padding */
+  margin: 0; /* Optional: Removes default margin */
+  display: none;
+}
+.header__item-select:hover {
+  ul {
+    display: block;
+  }
+}
+li {
+  display: inline-block;
+  height: 44px;
+  padding: 0 24px;
+}
+.header__item-select {
+  position: relative;
+}
+.sub-menu {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  background-color: black;
+}
+.d-block {
+  display: block;
+  line-height: 44px;
+  text-align: left;
+}
+.button-search {
+  height: 44px;
+  padding: 0 24px;
+  background-color: black;
+  border: none;
+  color: white;
+  margin: ;
+}
+.button-search:hover {
+  background-color: #f44336;
+}
+
+.slide1 {
+  background-image: url(https://www.w3schools.com/w3images/la.jpg);
+  color: #fff;
+  width: 100%;
+  min-height: 600px;
+}
