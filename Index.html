@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+    <!-- phần <header></header> -->
     <nav class="header">
       <ul class="header__item">
         <li class="background-color-white">
@@ -51,6 +52,7 @@
       </form>
     </nav>
     <br />
+    <!-- img band -->
     <section class="slide__img">
       <div class="slide1">
         <h3>Chicago</h3>
@@ -65,121 +67,215 @@
       <h3>Los Angeles</h3>
       <p>We had the best time playing at Venice Beach!</p> -->
     </section>
-    <section class="TheBand">
-      <h1>THE BAND</h1>
-      <span><i>We love music</i></span>
-      <p>
-        We have created a fictional band website. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-    </section>
-    <section class="Name">
-      <div>
-        <p>Name</p>
-        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" />
-      </div>
-      <div>
-        <p>Name</p>
-        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" />
-      </div>
-      <div>
-        <p>Name</p>
-        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" />
-      </div>
-    </section>
+    <!-- phần band -->
+    <div class="container">
+      <section class="TheBand">
+        <h1>THE BAND</h1>
+        <span><i>We love music</i></span>
+        <p class="theband-text">
+          We have created a fictional band website. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+      </section>
+      <section class="Name">
+        <div>
+          <p>Name</p>
+          <img
+            class="img-name"
+            src="https://www.w3schools.com/w3images/bandmember.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <p>Name</p>
+          <img
+            class="img-name"
+            src="https://www.w3schools.com/w3images/bandmember.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <p>Name</p>
+          <img
+            class="img-name"
+            src="https://www.w3schools.com/w3images/bandmember.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+    </div>
     <br />
-    <section class="TOUR">
-      <h1>TOUR DATES</h1>
-      <p><i>Remember to book your tickets!</i></p>
-      <table style="width: 100%">
-        <tr>
-          <td>September</td>
-          <td><button>Sold out</button></td>
-        </tr>
-        <tr>
-          <td>October</td>
-          <td><button>Sold out</button></td>
-        </tr>
-        <tr>
-          <td>November</td>
-          <td><button>3</button></td>
-        </tr>
-      </table>
-      <br />
-      <div class="card">
-        <div class="card__img">
-          <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="" />
+    <!-- phan tour -->
+    <div class="TOUR">
+      <section class="container-tour">
+        <h2 class="text-head">TOUR DATES</h2>
+        <p class="text-p"><i>Remember to book your tickets!</i></p>
+        <table>
+          <!-- <thead>
+          <th></th>
+        </thead> -->
+          <tbody>
+            <tr>
+              <td>September <span class="ticket--tag">Sold out</span></td>
+            </tr>
+            <tr>
+              <td>October <span class="ticket--tag">Sold out</span></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="ticket-container">
+                  <span>November</span>
+                  <span class="ticket--tag--con">3</span>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- card -->
+        <div class="card-container">
+          <div class="card card1">
+            <div class="card__img">
+              <img
+                src="https://www.w3schools.com/w3images/newyork.jpg"
+                alt=""
+                width="245px"
+                height="184px"
+              />
+            </div>
+            <div class="card__text">
+              <h4>New York</h4>
+              <span class="date">Fri 27 Nov 2016</span>
+              <p class="size-text">
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+              </p>
+              <button class="button-text">Buy Tickets</button>
+            </div>
+          </div>
+          <br />
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://www.w3schools.com/w3images/paris.jpg"
+                alt=""
+                width="245px"
+                height="184px"
+              />
+            </div>
+            <div class="card__text">
+              <h4>Paris</h4>
+              <span class="date">Sat 28 Nov 2016</span>
+              <p class="size-text">
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+              </p>
+              <button class="button-text">Buy Tickets</button>
+            </div>
+          </div>
+          <br />
+          <div class="card card3">
+            <div class="card__img">
+              <img
+                src="https://www.w3schools.com/w3images/sanfran.jpg"
+                alt=""
+                width="245px"
+                height="184px"
+              />
+            </div>
+            <div class="card__text">
+              <h4>San Francisco</h4>
+              <span class="date">Sun 29 Nov 2016</span>
+              <p class="size-text">
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+              </p>
+              <button class="button-text">Buy Tickets</button>
+            </div>
+          </div>
         </div>
-        <h4>New York</h4>
-        <span>Fri 27 Nov 2016</span>
-        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-        <button>Buy Tickets</button>
-      </div>
-      <br />
-      <div class="card">
-        <div class="card__img">
-          <img src="https://www.w3schools.com/w3images/paris.jpg" alt="" />
+        <br />
+      </section>
+    </div>
+    <!-- phan contact -->
+    <div>
+      <section class="CONTACT">
+        <div class="contact-text">
+          <h2>CONTACT</h2>
+          <span class="text-color"><i>Fan? Drop a note!</i></span>
         </div>
-        <h4>Paris</h4>
-        <span>Sat 28 Nov 2016</span>
-        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-        <button>Buy Tickets</button>
-      </div>
-      <br />
-      <div class="card">
-        <div class="card__img">
-          <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="" />
+        <br />
+        <br /><br />
+        <div class="contact-container">
+          <div class="contact-address">
+            <div class="contact-item">
+              <a href="#"
+                ><i class="fa-solid fa-location-dot icon-color"></i
+              ></a>
+              <span>Chicago, US</span>
+            </div>
+            <div class="contact-item">
+              <a href="#"><i class="fa-solid fa-phone icon-color"></i></a>
+              <span>Phone: +00 151515</span>
+            </div>
+            <div class="contact-item">
+              <a href="#"> <i class="fa-solid fa-envelope icon-color"></i></a>
+              <span>Email: mail@mail.com</span>
+            </div>
+          </div>
+          <form action="action_page.php" class="form">
+            <input
+              class="form-item1 form-input"
+              type="text"
+              placeholder="Name"
+            />
+            <input
+              class="form-item2 form-input"
+              type="text"
+              placeholder="Email"
+            />
+            <input
+              class="form-item3 form-input"
+              type="text"
+              placeholder="Message"
+            />
+            <button class="btn-submit" type="submit">SEND</button>
+          </form>
         </div>
-        <h4>San Francisco</h4>
-        <span>Sun 29 Nov 2016</span>
-        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-        <button>Buy Tickets</button>
-      </div>
-      <br />
-    </section>
-    <section class="CONTACT">
-      <h2>CONTACT</h2>
-      <span><i>Fan? Drop a note!</i></span>
-      <a href="#"><i class="fa-solid fa-location-dot"></i></a>
-      <span>Chicago, US</span>
-      <a href="#"><i class="fa-solid fa-phone"></i></a>
-      <span>Phone: +00 151515</span>
-      <a
-        href="mailto:someone@example.com?subject=Your%20Subject%20Here&body=Dear%20User,%0A%0AThis%20is%20a%20predefined%20email%20template.%0A%0AThank%20you!%0A%0AYour%20Name"
-        >Send Email
-        <i class="fa-solid fa-envelope"></i>
-        <span>Email: mail@mail.com</span></a
-      >
-      <form action="/action_page.php">
-        <input type="text" placeholder="Name" /><br /><br />
-        <input type="text" placeholder="Email" /><br /><br />
-        <input type="text" placeholder="Message" /><br /><br />
-        <button type="submit">SEND</button>
-      </form>
-    </section>
+      </section>
+    </div>
     <br />
+    <!-- phan footer -->
     <footer>
-      <img src="https://www.w3schools.com/w3images/map.jpg" alt="" />
-      <div class="icon">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-snapchat"></i></a>
-        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <img
+        class="img-background"
+        src="https://www.w3schools.com/w3images/map.jpg"
+        alt=""
+      />
+      <div class="footer-link">
+        <div class="icon">
+          <a href="#"><i class="fa-brands fa-facebook color-icon-text"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram color-icon-text"></i></a>
+          <a href="#"><i class="fa-brands fa-snapchat color-icon-text"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest color-icon-text"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter color-icon-text"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin color-icon-text"></i></a>
+        </div>
+        <p class="color-icon-text-a">
+          Powered by
+          <a
+            class="color-icon-text-a"
+            href="https://www.w3schools.com/w3css/default.asp"
+          >
+            w3.css</a
+          >
+        </p>
       </div>
-      <p>
-        Powered by
-        <a href="https://www.w3schools.com/w3css/default.asp"> w3.css</a>
-      </p>
     </footer>
   </body>
 </html>
